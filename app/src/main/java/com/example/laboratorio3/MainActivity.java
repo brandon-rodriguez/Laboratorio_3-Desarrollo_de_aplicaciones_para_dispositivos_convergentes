@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 running= false;
-                //showLaps();
+                showLaps();
             }
         });
 
@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 running= false;
+                laps= new ArrayList<String>();
                 seconds=0;
+                time.setText(format(seconds));
             }
         });
 
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 long timeLap= seconds;
                 laps.add(format(timeLap)+"");
-                running= false;
+                seconds=0;
             }
         });
 
@@ -81,5 +83,14 @@ public class MainActivity extends AppCompatActivity {
         return String.format(Locale.getDefault(), "%02d:%02d:%02d", hours, minutes, seconds);
     }
 
+    public void showLaps(){
+        TextView lapsView = (TextView) findViewById(R.id.laps);
+        String result="";
+        lapsView.setText(result);
+        for (int i = 0; i < laps.size(); i ++){
+            result+= i+" : " +laps.get(i)+ "\n";
+        }
+        lapsView.setText(result);
+    }
 
 }

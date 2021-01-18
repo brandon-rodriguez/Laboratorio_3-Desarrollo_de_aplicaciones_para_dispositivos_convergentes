@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 running= false;
                 laps= new ArrayList<String>();
                 seconds=0;
+                showLaps();
                 time.setText(format(seconds));
             }
         });
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 long timeLap= seconds;
                 laps.add(format(timeLap)+"");
+                showLaps();
                 seconds=0;
             }
         });
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         String result="";
         lapsView.setText(result);
         for (int i = 0; i < laps.size(); i ++){
-            result+= i+" : " +laps.get(i)+ "\n";
+            result+= "("+(i+1)+")\t" +laps.get(i)+ "\n";
         }
         lapsView.setText(result);
     }

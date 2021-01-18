@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     long seconds;
     TextView time;
     boolean running;
-    ArrayList<String> laps ;
+    String laps [];
+    int lapIndex;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         Button restart = (Button) findViewById(R.id.restart);
         Button lap = (Button) findViewById(R.id.lap);
         time = (TextView) findViewById(R.id.time);
-        laps = new ArrayList<String>();
+        laps = new String[10];
+        lapIndex=0;
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 running= false;
-                laps= new ArrayList<String>();
+                laps= new String[10];
                 seconds=0;
+                lapIndex=0;
                 showLaps();
                 time.setText(format(seconds));
             }
@@ -61,16 +65,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 long timeLap= seconds;
-                laps.add(format(timeLap)+"");
+                lapIndex = (lapIndex==10)? 0: lapIndex;
+                laps[lapIndex]=(format(timeLap)+"");
+                lapIndex++;
                 showLaps();
                 seconds=0;
             }
         });
 
         if (savedInstanceState != null) {
-            this.seconds = savedInstanceState.getLong("SEGUNDOS");
-            this.running = savedInstanceState.getBoolean("EJECUTANDO");
-            this.laps = savedInstanceState.getStringArrayList("laps");
+            this.seconds = savedInstanceState.getLong("seconds");
+            this.running = savedInstanceState.getBoolean("running");
+            this.laps = savedInstanceState.getStringArray("laps");
+            this.lapIndex = savedInstanceState.getInt("lapIndex");
             showLaps();
         }
 
@@ -100,8 +107,9 @@ public class MainActivity extends AppCompatActivity {
         TextView lapsView = (TextView) findViewById(R.id.laps);
         String result="";
         lapsView.setText(result);
-        for (int i = 0; i < laps.size(); i ++){
-            result+= "("+(i+1)+")\t" +laps.get(i)+ "\n";
+        for (int i = 0; i < 10; i ++){
+            String content = laps[i]!= null? laps[i] : "";
+            result+= "("+(i+1)+")\t" +content+ "\n";
         }
         lapsView.setText(result);
     }
@@ -111,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState, outPersistentState);
         outState.putLong("seconds", this.seconds);
         outState.putBoolean("running", this.running);
-        outState.putStringArrayList("laps", this.laps);
+        outState.putStringArray("laps", this.laps);
+        outState.putInt("lapIndex", this.lapIndex);
     }
 
 }

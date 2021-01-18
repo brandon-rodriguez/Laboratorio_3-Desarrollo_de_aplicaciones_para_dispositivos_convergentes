@@ -11,6 +11,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Locale;
 
+
+import androidx.annotation.NonNull;
+import android.os.PersistableBundle;
+
 public class MainActivity extends AppCompatActivity {
     long seconds;
     TextView time;
@@ -61,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        if (savedInstanceState != null) {
+            this.seconds = savedInstanceState.getLong("SEGUNDOS");
+            this.running = savedInstanceState.getBoolean("EJECUTANDO");
+            this.laps = savedInstanceState.getStringArrayList("laps");
+            showLaps();
+        }
+
         iniciar();
     }
 
@@ -91,6 +102,14 @@ public class MainActivity extends AppCompatActivity {
             result+= i+" : " +laps.get(i)+ "\n";
         }
         lapsView.setText(result);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        outState.putLong("seconds", this.seconds);
+        outState.putBoolean("running", this.running);
+        outState.putStringArrayList("laps", this.laps);
     }
 
 }

@@ -6,8 +6,8 @@ Comprender el ciclo de vida de las actividades Android.
 
 ## Material de apoyo
 
-    * https://upcedu-my.sharepoint.com/personal/gilberto-pedraza_unipiloto_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilberto%2Dpedraza%5Funipiloto%5Fedu%5Fco%2FDocuments%2FCursos%2FMoodle%2FDesarrollo%2Daplicaciones%2Dconvergentes%2F03%20Ambiente%20de%20desarrollo%20convergente%2F01%20Android%20Studio%2Fpresentaciones%2FConvergentes%2D%20android%2Dapplication%2Dlifecycle%2Dconcepts%2Epdf&parent=%2Fpersonal%2Fgilberto%2Dpedraza%5Funipiloto%5Fedu%5Fco%2FDocuments%2FCursos%2FMoodle%2FDesarrollo%2Daplicaciones%2Dconvergentes%2F03%20Ambiente%20de%20desarrollo%20convergente%2F01%20Android%20Studio%2Fpresentaciones&originalPath=aHR0cHM6Ly91cGNlZHUtbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvZ2lsYmVydG8tcGVkcmF6YV91bmlwaWxvdG9fZWR1X2NvL0VTQW1HYUx4ODRCTHVxRnBtUWpXd2trQjhuR2tiZ0RYaWRqXzl5U1hTX2RxSkE_cnRpbWU9emV5NGo0akEyRWc
-    * https://upcedu-my.sharepoint.com/personal/gilberto-pedraza_unipiloto_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilberto%2Dpedraza%5Funipiloto%5Fedu%5Fco%2FDocuments%2FCursos%2FMoodle%2FDesarrollo%2Daplicaciones%2Dconvergentes%2F03%20Ambiente%20de%20desarrollo%20convergente%2F01%20Android%20Studio%2Fpresentaciones%2FConvergentes%2D%20android%2Dactivity%2Dlifecycle%2Epdf&parent=%2Fpersonal%2Fgilberto%2Dpedraza%5Funipiloto%5Fedu%5Fco%2FDocuments%2FCursos%2FMoodle%2FDesarrollo%2Daplicaciones%2Dconvergentes%2F03%20Ambiente%20de%20desarrollo%20convergente%2F01%20Android%20Studio%2Fpresentaciones&originalPath=aHR0cHM6Ly91cGNlZHUtbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvZ2lsYmVydG8tcGVkcmF6YV91bmlwaWxvdG9fZWR1X2NvL0VmTGJuOVdjWEZsQ25wRDl6aTAwREtZQmtMbUU2TWxXTFI0UGU0YXZFQm5lS2c_cnRpbWU9UTdsNGtJakEyRWc
+    * hhttps://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/ESAmGaLx84BLuqFpmQjWwkkB8nGkbgDXidj_9ySXS_dqJA?e=qNNA8A
+    * https://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/EfLbn9WcXFlCnpD9zi00DKYBkLmE6MlWLR4Pe4avEBneKg?e=hyyxDQ
 
 ## Desarrollo
 

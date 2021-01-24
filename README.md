@@ -6,8 +6,8 @@ Comprender el ciclo de vida de las actividades Android.
 
 ## Material de apoyo
 
-    * hhttps://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/ESAmGaLx84BLuqFpmQjWwkkB8nGkbgDXidj_9ySXS_dqJA?e=qNNA8A
-    * https://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/EfLbn9WcXFlCnpD9zi00DKYBkLmE6MlWLR4Pe4avEBneKg?e=hyyxDQ
+    https://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/ESAmGaLx84BLuqFpmQjWwkkB8nGkbgDXidj_9ySXS_dqJA?e=qNNA8A
+    https://upcedu-my.sharepoint.com/:b:/g/personal/gilberto-pedraza_unipiloto_edu_co/EfLbn9WcXFlCnpD9zi00DKYBkLmE6MlWLR4Pe4avEBneKg?e=hyyxDQ
 
 ## Desarrollo
 
